@@ -18,7 +18,7 @@ def send_simple_message(emailaddress):
 
 @app.route("/")
 def hello():
-    return "Hello world"
+    return render_template("index.html")
 
 # @app.route("/jo")
 # def helloJo():
