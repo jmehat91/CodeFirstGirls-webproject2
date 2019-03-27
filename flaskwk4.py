@@ -34,7 +34,7 @@ def bye():
 
 @app.route("/<name>")
 def HelloStranger(name):
-    return render_template("hello1.html" , name = name )
+    return render_template("index.html" , name = name )
 
 # @app.route("/signup", methods=["POST"])
 # def sign_up():
