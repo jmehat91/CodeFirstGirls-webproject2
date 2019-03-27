@@ -17,20 +17,20 @@ def send_simple_message(emailaddress):
 
 
 @app.route("/")
-def hello():
+def index():
     return render_template("index.html")
 
 # @app.route("/jo")
 # def helloJo():
 #     return "Hello Jo"
 
-@app.route("/hi/")
-def hi():
-    return "Hi!"
+@app.route("/howitworks/")
+def hiw():
+    return render_template("howitworks.html")
 
-@app.route("/bye")
-def bye():
-    return "Goodbye!"
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
 
 @app.route("/<name>")
 def HelloStranger(name):
